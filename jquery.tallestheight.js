@@ -1,7 +1,7 @@
 /*!
  * Tallest Height - A function for normalising heights of elements
  *
- * Version:  1.0
+ * Version:  1.1
  * Released: 28-02-2013
  * Source:   http://github.com/Vheissu/jQuery-Tallest-Height
  * Plugin:   tallestHheight
@@ -36,8 +36,8 @@
             // had their heights calculated.
             $this.css('height', 'auto');
 
-            if ($this.height() > tallestHeight) {
-                tallestHeight = $this.height();  
+            if ($this.outerHeight() > tallestHeight) {
+                tallestHeight = $this.outerHeight();  
             }
         });
 
